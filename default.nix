@@ -18,6 +18,7 @@
   fcitx5-pinyin-zhwiki = pkgs.callPackage ./pkgs/fcitx5-pinyin-zhwiki { };
   rime-icea = pkgs.callPackage ./pkgs/rime-icea { };
   ldmtool = pkgs.callPackage ./pkgs/ldmtool { };
+  nerdfonts = pkgs.callPackage ./pkgs/nerdfonts { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
