@@ -19,6 +19,7 @@
   rime-icea = pkgs.callPackage ./pkgs/rime-icea { };
   ldmtool = pkgs.callPackage ./pkgs/ldmtool { };
   nerdfonts = pkgs.callPackage ./pkgs/nerdfonts { };
+  tlock-arrch64 = pkgs.callPackage ./pkgs/tlock-aarch64 { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
