@@ -1,6 +1,7 @@
-{ stdenv
-, lib
-, fetchFromGitHub
+{
+  stdenv,
+  lib,
+  fetchFromGitHub,
 }:
 
 stdenv.mkDerivation {
@@ -10,13 +11,9 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "aysixi";
     repo = "rime-icea";
-    rev = "e3f0f0e814f85656c3fb6c9075d64a47de068fe7";
-    sha256 = "sha256-ZZhFHoymX5I9X6FnXVaWGRKp0BYnRq9Hom0vMtIcYGE=";
+    rev = "main";
+    sha256 = "sha256-U4xhWtFcejyV3VT54ZklYPBlwJN0B1J41udnSVFDJEE=";
   };
-
-  # buildPhase = ''
-  #   mv default.yaml rime_ice_suggestion.yaml
-  # '';
 
   installPhase = ''
     mkdir -p $out/share/rime-data
