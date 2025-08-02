@@ -22,6 +22,7 @@
   ldmtool = pkgs.callPackage ./pkgs/ldmtool { };
   nerdfonts = pkgs.callPackage ./pkgs/nerdfonts { };
   tlock-arrch64 = pkgs.callPackage ./pkgs/tlock-aarch64 { };
+  paricofe = pkgs.callPackage ./pkgs/paricofe { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
