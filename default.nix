@@ -8,6 +8,7 @@
 
 {
   pkgs ? import <nixpkgs> { },
+  ldm-pkgs,
 }:
 
 {
@@ -19,6 +20,7 @@
   fcitx5-pinyin-moegirl = pkgs.callPackage ./pkgs/fcitx5-pinyin-moegirl { };
   fcitx5-pinyin-zhwiki = pkgs.callPackage ./pkgs/fcitx5-pinyin-zhwiki { };
   rime-icea = pkgs.callPackage ./pkgs/rime-icea { };
+  ldmtool = ldm-pkgs.callPackage ./pkgs/ldmtool { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }

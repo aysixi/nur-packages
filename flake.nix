@@ -1,8 +1,13 @@
 {
   description = "My personal NUR repository";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs.ldmtool-nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
   outputs =
-    { self, nixpkgs }:
+    {
+      self,
+      nixpkgs,
+      ldmtool-nixpkgs,
+    }:
     let
       systems = [
         "x86_64-linux"
@@ -19,6 +24,7 @@
         system:
         import ./default.nix {
           pkgs = import nixpkgs { inherit system; };
+          ldm-pkgs = import ldmtool-nixpkgs { inherit system; };
         }
       );
       packages = forAllSystems (

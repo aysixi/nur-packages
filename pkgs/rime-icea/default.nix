@@ -12,7 +12,7 @@ stdenv.mkDerivation {
     owner = "aysixi";
     repo = "rime-icea";
     rev = "main";
-    sha256 = "sha256-fUvIcicKVOB9RcLP9PmkjI5zY8CogoVJIL0b4xHrpVc=";
+    sha256 = "sha256-8J0lPWSgpEtwT4QcW5Dsgj/B9kbQb/kL8P5s7BL9jMk=";
   };
 
   installPhase = ''
